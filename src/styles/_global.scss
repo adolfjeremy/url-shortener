@@ -1,0 +1,105 @@
+$cyan: hsl(180, 66%, 49%);
+$darkViolet: hsl(257, 27%, 26%);
+$red: hsl(0, 87%, 67%);
+$gray: hsl(0, 0%, 75%);
+$grayishViolet: hsl(257, 7%, 63%);
+$veryDarkBlue: hsl(255, 11%, 22%);
+$veryDarkViolet: hsl(260, 8%, 14%);
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+a,
+button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button {
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background-color: $cyan;
+    &:hover {
+        background-color: #9be3e2;
+    }
+}
+
+@media (max-width: 479px) {
+    .open {
+        display: flex !important;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+    }
+}
+
+.container_url_feature {
+    background-color: #f0f1f6;
+    padding: 100px 6% 80px;
+}
+
+.feature_section {
+    display: flex;
+    flex-direction: column;
+    .feature_heading {
+        width: 100%;
+        margin: 130px auto 100px;
+        text-align: center;
+        @media (min-width: 480px) {
+            width: 50vw;
+        }
+        h2 {
+            font-size: 3vh;
+            color: $veryDarkBlue;
+            @media (min-width: 480px) {
+                font-size: 3vw;
+                margin-bottom: 35px;
+            }
+        }
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            color: $grayishViolet;
+        }
+    }
+}
+
+.boost_section {
+    height: 300px;
+    text-align: center;
+    overflow: hidden;
+    .tes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 6%;
+        background-image: url(./../images//bg-boost-mobile.svg);
+        background-color: $darkViolet;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top right;
+        height: 100%;
+        @media (min-width: 1024px) {
+            padding: 70px 12%;
+            background-image: url(./../images//bg-boost-desktop.svg);
+        }
+    }
+    .heading_container {
+        margin-bottom: 25px;
+        h2 {
+            color: #fff;
+            margin: 0;
+        }
+    }
+}

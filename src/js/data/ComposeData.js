@@ -7,7 +7,7 @@ const searchBarElement = document.querySelector("search-bar");
 const inputField = document.querySelector(".input_field");
 
 export const composeData = async () => {
-    if (searchBarElement.value.includes("https://www.")) {
+    if (searchBarElement.value.includes("https://")) {
         const request = await ApiRequest.ShortingUrl(searchBarElement.value);
         const urlObject = DataManagement.composeUrlObject(
             request.original_link,

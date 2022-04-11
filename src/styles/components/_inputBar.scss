@@ -34,11 +34,12 @@ search-bar {
                 }
             }
             span {
-                color: #c0607b;
+                position: absolute;
+                bottom: 90px;
                 font-style: italic;
                 font-size: 16px;
+                color: #c0607b;
                 @media (min-width: 768px) {
-                    position: absolute;
                     bottom: -25px;
                 }
             }
